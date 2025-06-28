@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Jamhuuriya University</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <section id="header">
+    <img src="image/logo_white.png" alt="Jamhuuriya Logo"/>
+    <ul id="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="helping.html">Help</a></li>
+    </ul>
+  </section>
+
+  <!-- Booking Form -->
+  <form action="#" method="post" novalidate>
+    <fieldset>
+      <legend>Guest Information</legend>
+      <label for="name">Name:
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="2" maxlength="50" autocomplete="name" />
+      </label>
+      <label for="major">Major:
+        <select id="major" name="major" required>
+          <option value="" disabled selected>Select your major</option>
+          <option value="computer_science">Computer Science</option>
+          <option value="business">Business</option>
+          <option value="engineering">Engineering</option>
+          <option value="arts">Arts</option>
+          <option value="medicine">Medicine</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Gender</legend>
+      <div class="options-group">
+        <label><input type="radio" name="gender" value="male" required /> Male</label>
+        <label><input type="radio" name="gender" value="female" /> Female</label>
+        <label><input type="radio" name="gender" value="other" /> Other</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Hobbies</legend>
+      <div class="options-group">
+        <label><input type="checkbox" name="hobbies" value="reading" /> Reading</label>
+        <label><input type="checkbox" name="hobbies" value="sports" /> Sports</label>
+        <label><input type="checkbox" name="hobbies" value="music" /> Music</label>
+        <label><input type="checkbox" name="hobbies" value="traveling" /> Traveling</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Comments</legend>
+      <textarea id="comments" name="comments" placeholder="Write any comments here..." rows="5" maxlength="300"></textarea>
+    </fieldset>
+
+    <button type="submit">Submit Booking</button>
+  </form>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Banking</h4>
+        <a href="#">Current Account</a>
+        <a href="#">Savings Account</a>
+      </div>
+      <div class="footer-section">
+        <h4>About Us</h4>
+        <a href="#">About</a>
+        <a href="#">Core Values</a>
+      </div>
+      <div class="footer-section">
+        <h4>Products & Services</h4>
+        <a href="#">Car Finance</a>
+        <a href="#">Home Finance</a>
+      </div>
+      <div class="footer-section">
+        <h4>Address</h4>
+        <a href="#">Our Head Office</a>
+        <a href="#">Salaam Tower</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <a href="mailto:info@salaamsomali.so">info@salaamsomali.so</a>
+        <a href="#">www.salaambank.so</a>
+        <a href="#">3:40am – 5:00pm</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 @Salman Ahmed Salad. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
